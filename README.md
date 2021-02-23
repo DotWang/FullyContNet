@@ -26,7 +26,7 @@ git clone https://github.com/DotWang/FullyContNet.git
 ```
 3. Training, evaluation and prediction with ***trainval.py*** :
 
-For example, if you use Pyramid-FCM with P-C-S scheme and training on [Indian Pines dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
+For example, if the users use Pyramid-FCM with P-C-S scheme and training on [Indian Pines dataset](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 
 ```
 CUDA_VISIBLE_DEVICES=0 python -u trainval.py \
@@ -41,7 +41,8 @@ CUDA_VISIBLE_DEVICES=0 python -u trainval.py \
 ```
 Then the evalution accuracies, the trained models and the classification map are separately saved.
 ## Note
-- The mixed-precision training is supported by APEX. However, if you use **Salinas dataset**, please set `use_apex=False`, or it will cause the error.
+- Supporting fine-tune, where the users should specify the path of resume.
+- Supporting mixed-precision training with the help of APEX. However, if you use **Salinas dataset**, please set `use_apex=False`, or it will cause the error.
 - In our experiments, we directly adopt the whole image and training on the 16G NVIDIA Tesla V100 GPU. However, it is difficulty on the GPU that with smaller memory, especially for the **Houston dataset**. Thus, the sliding window training using *partial image* is also realized in the codes, where the users can freely configure the size of input patches and overlapping areas. However, the accuracies may be affected.
 ## Thanks
 [PSPNet](https://github.com/hszhao/semseg)
