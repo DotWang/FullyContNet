@@ -9,13 +9,14 @@ If this repo is useful for your research, please cite our [paper](https://doi.or
 
 ```
 @ARTICLE{2021FullyContNet,
-  author={D. {Wang} and B. {Du} and L. {Zhang}},
+  author={Wang, Di and Du, Bo and Zhang, Liangpei},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={Fully Contextual Network for Hyperspectral Scene Parsing}, 
-  year={2021},
+  year={2022},
+  volume={60},
+  number={},
   pages={1-16},
-  doi={10.1109/TGRS.2021.3050491}
-  }
+  doi={10.1109/TGRS.2021.3050491}}
 ```
 
 ## Usage
