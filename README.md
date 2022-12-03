@@ -1,12 +1,24 @@
 # Fully Contextual Network for Hyperspectral Scene Parsing
-Pytorch implementation of our method for image-level hyperspectral image classification.
+### Pytorch implementation of our method for image-level hyperspectral image classification.
 
 <figure>
-<img src=model.PNG>
-<figcaption align = "center"><b>Fig.1 - The proposed FullyContNet </b></figcaption>
+<img src=Figs/network.png>
+<figcaption align = "center"><b>Fig.1 - The proposed FullyContNet. </b></figcaption>
 </figure>
 
 &emsp;
+
+<figure>
+<img src=Figs/module.png>
+<figcaption align = "center"><b>Fig.2 - The FCMs. </b></figcaption>
+</figure>
+
+&emsp;
+
+<figure>
+<img src=Figs/detaild_module.png>
+<figcaption align = "center"><b>Fig.3 - Different schemes of the FCM. </b></figcaption>
+</figure>
 
 ## Paper and Citation
 
