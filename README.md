@@ -16,7 +16,7 @@
 &emsp;
 
 <figure>
-<img src=Figs/detaild_module.png>
+<img src=Figs/detailed_module.png>
 <figcaption align = "center"><b>Fig.3 - Different schemes of the FCM. </b></figcaption>
 </figure>
 
