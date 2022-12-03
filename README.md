@@ -1,4 +1,7 @@
 # Fully Contextual Network for Hyperspectral Scene Parsing
+
+### Di Wang, Bo Du, and Liangpei Zhang
+
 ### Pytorch implementation of our [paper](https://ieeexplore.ieee.org/document/9347487) for image-level hyperspectral image classification.
 
 <figure>
