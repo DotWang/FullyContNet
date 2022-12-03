@@ -1,7 +1,12 @@
 # Fully Contextual Network for Hyperspectral Scene Parsing
 Pytorch implementation of our method for image-level hyperspectral image classification.
 
-![network](https://github.com/DotWang/FullyContNet/blob/main/model.PNG)
+<figure>
+<img src=model.PNG>
+<figcaption align = "center"><b>Fig.1 - The proposed FullyContNet </b></figcaption>
+</figure>
+
+&emsp;
 
 ## Paper and Citation
 
@@ -57,3 +62,11 @@ Then the evalution accuracies, the trained models and the classification map are
 [CCNet-Pure-Pytorch](https://github.com/Serge-weihao/CCNet-Pure-Pytorch)
 
 [OCNet](https://github.com/openseg-group/OCNet.pytorch)
+
+
+## Relevant Projects
+[1] <strong> Pixel and Patch-level Hyperspectral Image Classification </strong> 
+<br> &ensp; &ensp; Adaptive Spectral–Spatial Multiscale Contextual Feature Extraction for Hyperspectral Image Classification, IEEE TGRS, 2021 
+<br><em> &ensp; &ensp; Di Wang<sup>&#8727;</sup>, Bo Du, Liangpei Zhang and Yonghao Xu</em> | [Paper](https://ieeexplore.ieee.org/document/9121743/) | [Github](https://github.com/DotWang/ASSMN)
+
+
