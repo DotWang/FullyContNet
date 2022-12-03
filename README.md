@@ -1,5 +1,5 @@
 # Fully Contextual Network for Hyperspectral Scene Parsing
-### Pytorch implementation of our method for image-level hyperspectral image classification.
+### Pytorch implementation of our [paper](https://ieeexplore.ieee.org/document/9347487) for image-level hyperspectral image classification.
 
 <figure>
 <img src=Figs/network.png>
@@ -20,21 +20,6 @@
 <figcaption align = "center"><b>Fig.3 - Different schemes of the FCM. </b></figcaption>
 </figure>
 
-## Paper and Citation
-
-If this repo is useful for your research, please cite our [paper](https://doi.org/10.1109/TGRS.2021.3050491).
-
-```
-@ARTICLE{2021FullyContNet,
-  author={Wang, Di and Du, Bo and Zhang, Liangpei},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Fully Contextual Network for Hyperspectral Scene Parsing}, 
-  year={2022},
-  volume={60},
-  number={},
-  pages={1-16},
-  doi={10.1109/TGRS.2021.3050491}}
-```
 
 ## Usage
 1. Install Pytorch 1.x (>1.0) with Python 3.5.
@@ -62,18 +47,25 @@ Then the evalution accuracies, the trained models and the classification map are
 - Supporting fine-tune, where the users should specify the path of resume.
 - Supporting mixed-precision training with the help of APEX. However, if you use **Salinas dataset**, please set `use_apex=False`, or it will cause the error.
 - In our experiments, we directly adopt the whole image and training on the 16G NVIDIA Tesla V100 GPU. However, it is difficulty on the GPU that with smaller memory, especially for the **Houston dataset**. Thus, the sliding window training using *partial image* is also realized in the codes, where the users can freely configure the size of input patches and overlapping areas. However, the accuracies may be affected.
+
+## Paper and Citation
+
+If this repo is useful for your research, please cite our [paper](https://ieeexplore.ieee.org/document/9347487).
+
+```
+@ARTICLE{2021FullyContNet,
+  author={Wang, Di and Du, Bo and Zhang, Liangpei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Fully Contextual Network for Hyperspectral Scene Parsing}, 
+  year={2022},
+  volume={60},
+  number={},
+  pages={1-16},
+  doi={10.1109/TGRS.2021.3050491}}
+```
+
 ## Thanks
-[PSPNet](https://github.com/hszhao/semseg)
-
-[Deeplab](https://github.com/jfzhang95/pytorch-deeplab-xception)
-
-[DANet](https://github.com/junfu1115/DANet)
-
-[CCNet](https://github.com/speedinghzl/CCNet)
-
-[CCNet-Pure-Pytorch](https://github.com/Serge-weihao/CCNet-Pure-Pytorch)
-
-[OCNet](https://github.com/openseg-group/OCNet.pytorch)
+[PSPNet](https://github.com/hszhao/semseg) &ensp; [Deeplab](https://github.com/jfzhang95/pytorch-deeplab-xception) &ensp; [DANet](https://github.com/junfu1115/DANet) &ensp;[CCNet](https://github.com/speedinghzl/CCNet) &ensp; [CCNet-Pure-Pytorch](https://github.com/Serge-weihao/CCNet-Pure-Pytorch) &ensp; [OCNet](https://github.com/openseg-group/OCNet.pytorch)
 
 
 ## Relevant Projects
