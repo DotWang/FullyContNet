@@ -1,6 +1,10 @@
 # Fully Contextual Network for Hyperspectral Scene Parsing (TGRS 2021)
 
-### Di Wang, Bo Du, and Liangpei Zhang
+## Di Wang, Bo Du, and Liangpei Zhang
+
+## Update 2023.04: FullyContNet won the Highly Cited Paper.
+
+![](https://github.com/DotWang/FullyContNet/blob/main/highly_cited.png)
 
 ### Pytorch implementation of our [paper](https://ieeexplore.ieee.org/document/9347487) for image-level hyperspectral image classification.
 
